@@ -1,0 +1,53 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>704</x><y>504</y><w>144</w><h>88</h></coordinates><panel_attributes>orderpart
+--
+orderPartID [PK]
+orderID [FK]
+productId [FK]
+quantity
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>768</x><y>368</y><w>32</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=n</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>704</x><y>320</y><w>144</w><h>56</h></coordinates><panel_attributes>order
+--
+orderID [PK]
+customerEmail [FK]
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>768</x><y>192</y><w>32</w><h>144</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=n</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element><element><id>UMLClass</id><coordinates><x>704</x><y>120</y><w>144</w><h>80</h></coordinates><panel_attributes>customer
+--
+email [PK]
+name
+address </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>768</x><y>56</y><w>32</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>704</x><y>0</y><w>144</w><h>64</h></coordinates><panel_attributes>address
+--
+street
+city
+zipCode
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>160</y><w>400</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes><additional_attributes>480;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>184</x><y>128</y><w>144</w><h>72</h></coordinates><panel_attributes>shoppingbasket
+--
+customerEmail [PK][FK]
+productId [PK][FK]
+quantity
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>216</x><y>192</y><w>32</w><h>304</h></coordinates><panel_attributes>lt=&lt;-
+m1=n
+m2=1</panel_attributes><additional_attributes>10;360;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>328</x><y>544</y><w>392</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=n
+m2=1</panel_attributes><additional_attributes>470;10;220;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>192</x><y>480</y><w>144</w><h>104</h></coordinates><panel_attributes>product
+--
+productId [PK]
+name
+description
+size
+purchasePrice
+salesPrice
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>160</y><w>784</w><h>520</h></coordinates><panel_attributes>lt=&lt;-
+m1=n
+m2=1</panel_attributes><additional_attributes>910;230;960;230;960;630;10;630;10;10;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>368</x><y>240</y><w>144</w><h>64</h></coordinates><panel_attributes>inventory
+--
+productId [PK]
+inventoryQuantity
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>248</x><y>272</y><w>136</w><h>224</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=n</panel_attributes><additional_attributes>150;10;10;10;10;260</additional_attributes></element></diagram>
